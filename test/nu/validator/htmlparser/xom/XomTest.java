@@ -20,14 +20,19 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-package nu.validator.htmlparser.test;
+package nu.validator.htmlparser.xom;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
 
+import org.junit.Test;
+
 public class XomTest {
-    public static void main(String[] args) {
+
+    @Test
+    public void testXom() {
         Element elt = new Element("html", "http://www.w3.org/1999/xhtml");
         elt.addAttribute(new Attribute("xmlns:foo", "bar"));
     }
+
 }
